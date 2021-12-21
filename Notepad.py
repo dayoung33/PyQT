@@ -26,11 +26,8 @@ class fontPopup(QDialog, form_class) :
         self.pushButton.clicked.connect(self.okButtonFunction)
         self.pushButton_2.clicked.connect(self.cancelButtonFunction)
 
-    #fontComboBox
-#spinBox
-
     def okButtonFunction(self):
-        print("ok click")
+        self.close()
 
     def cancelButtonFunction(self):
         self.close()
